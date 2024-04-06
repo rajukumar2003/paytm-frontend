@@ -6,7 +6,7 @@ export function BalanceComponent() {
     
     const [balance, setBalance] = useState(0);
 
-    axios.get("http://localhost:3000/api/v1/account/balance", {
+    axios.get("https://paytm-backend-oubg.onrender.com/api/v1/account/balance", {
         headers: {
             Authorization: "Bearer "+localStorage.getItem('token')
         }
